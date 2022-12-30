@@ -77,7 +77,7 @@ FILESYSTEM_DISK=local
 QUEUE_CONNECTION=sync
 SESSION_DRIVER=file
 SESSION_LIFETIME=120
-NIXPACKS_BUILD_CMD=composer install --no-ansi --no-dev --no-interaction --no-plugins --no-progress --no-scripts --optimize-autoloader && php artisan migrate
+NIXPACKS_BUILD_CMD=composer install --optimize-autoloader --no-dev && php artisan config:cache && php artisan route:cache && php artisan view:cache && php artisan migrate
 ```
 
 You should change the `APP_URL` to the URL from the front-end deployment below later. The deployment should be successful at this point, then go to the settings tab and Generate a domain, that will be the backend URL.
