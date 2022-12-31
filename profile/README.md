@@ -82,7 +82,7 @@ NIXPACKS_BUILD_CMD=composer install --optimize-autoloader --no-dev && php artisa
 
 You should change the `APP_URL` to the URL from the front-end deployment below later. The deployment should be successful at this point, then go to the settings tab and Generate a domain, that will be the backend URL.
 
-Now deploy the frontend the same way, this time you'll see a Suggested variable `REACT_APP_API`. Change the URL to the backend URL you just deployed. Generate a domain and you're ready to go ahead and create a jobenv
+Now deploy the frontend the same way, this time you'll see a Suggested variable `REACT_APP_API`. Change the URL to the backend URL you just deployed. Generate a domain and you're ready to go ahead and create a job.
 
 # App Flow
 
